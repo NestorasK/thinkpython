@@ -3,7 +3,6 @@
 # method and the other using the idiom t = t + [x].
 # Which one takes longer to run? Why?
 
-# %%
 def build_list_from_file(filename):
     fin = open(file = filename)
     out_list = []
@@ -22,11 +21,6 @@ def build_list_from_file2(filename):
 
     return out_list
 
-# %%
-# f_list = build_list_from_file(filename="../words.txt")
+f_list = build_list_from_file(filename="../words.txt")
+f_list_2 = build_list_from_file2(filename="../words.txt")
 
-# # %%
-# f_list_2 = build_list_from_file2(filename="../words.txt")
-
-
-# %%

@@ -21,6 +21,6 @@ def build_list_from_file2(filename):
 
     return out_list
 
-f_list = build_list_from_file(filename="../words.txt")
-f_list_2 = build_list_from_file2(filename="../words.txt")
+# f_list = build_list_from_file(filename="../words.txt")
+# f_list_2 = build_list_from_file2(filename="../words.txt")
 

@@ -1,7 +1,10 @@
 # %%
 import math
+
+# %%
 from ex10_9 import build_list_from_file
 
+# %%
 def in_bisect(t, stri):
     # print("\nt is:", t)
     # print("stri is:", stri)
@@ -31,14 +34,25 @@ def in_bisect(t, stri):
             return in_bisect(t = t[(pointer_middle):pointer_end+1], stri=stri)
 
 # %%
-f_list = build_list_from_file(filename="words.txt")
+f_list = build_list_from_file(filename="../words.txt")
 
 # %%
-
-for word_i in f_list:
+# trying the bisect search
+for word_i in f_list[10000:20000]:
     out = in_bisect(t = f_list, stri = word_i)
-    print(word_i, out)
+    # print(word_i, out)
     if out == False:
         print("Something is wrong")
         break
 
+
+# %%
+# trying the in search
+for word_i in f_list[10000:20000]:
+    out = word_i in f_list
+    # print(word_i, out)
+    if out == False:
+        print("Something is wrong")
+        break
+
+# %%
